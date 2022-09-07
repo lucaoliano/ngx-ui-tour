@@ -1,5 +1,5 @@
 {
-  "name": "ngx-ui-tour-ionic",
+  "name": "@lucaoliano/ngx-ui-tour-ionic",
   "version": "1.0.0",
   "description": "UI tour library for Angular 12+",
   "keywords": [
@@ -12,9 +12,12 @@
     "onboarding",
     "onboarding-tour"
   ],
-  "repository": "https://github.com/hakimio/ngx-ui-tour.git",
+  "repository": "https://github.com/lucaoliano/ngx-ui-tour.git",
   "author": "Luca Oliano <lucaoliano@hotmail.it>",
   "license": "MIT",
+  "publishConfig": {
+    "@lucaoliano:registry": "https://npm.pkg.github.com"
+  },
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
