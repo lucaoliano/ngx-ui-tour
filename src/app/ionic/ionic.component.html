@@ -1,0 +1,66 @@
+<tui-doc-page
+    header="Ionic"
+    package="ngx-ui-tour-ionic"
+>
+    <ng-template pageTab>
+        <p>
+            <code>ngx-ui-tour</code> is a UI tour library built for Angular. It's inspired by
+            <a tuiLink target="_blank" tourAnchor="angular-ui-tour" href="http://benmarch.github.io/angular-ui-tour">angular-ui-tour</a>.
+        </p>
+        <p>
+            <code>TourIonicModule</code> is an implementation of the tour UI that uses
+            <a tuiLink href="https://ionicframework.com" target="_blank">Ionic</a> popovers to display tour steps.
+        </p>
+        <p>
+            <button
+                tuiButton
+                type="button"
+                (click)="start()"
+                tourAnchor="start.tour"
+            >
+                Start Demo Tour
+            </button>
+        </p>
+    </ng-template>
+    <ng-template pageTab>
+        <app-header tourAnchor="installation" id="installation">Installation</app-header>
+
+        <ol>
+            <li>
+                <code>npm install ngx-ui-tour-ionic @ionic/angular</code>
+            </li>
+            <li>
+                Import <code>TourIonicModule.forRoot()</code> into your app module
+            </li>
+            <li>
+                Make sure <code>RouterModule</code> is imported in your app module
+            </li>
+        </ol>
+        <app-usage moduleName="TourIonicModule"></app-usage>
+    </ng-template>
+    <ng-template pageTab>
+        <app-step-config>
+            <app-placement-config
+                value="top"
+                extraInfo="Accepts <a href='https://ng-bootstrap.github.io/#/components/popover/api#NgbPopover'>NgbPopover</a> placement options."
+                [values]="['top', 'top-left', 'top-right', 'bottom', 'bottom-left', 'bottom-right', 'left', 'left-top',
+                'left-bottom', 'right', 'right-top', 'right-bottom']"
+            ></app-placement-config>
+        </app-step-config>
+        <app-tour-service-api></app-tour-service-api>
+        <app-events></app-events>
+    </ng-template>
+    <ng-template pageTab>
+        <app-faq></app-faq>
+    </ng-template>
+    <ng-template pageTab>
+        <app-hotkeys></app-hotkeys>
+        <app-defaults></app-defaults>
+        <app-custom-template
+            [defaultTemplate]="defaultTemplate"
+        ></app-custom-template>
+        <app-styling-active-tour-anchor></app-styling-active-tour-anchor>
+    </ng-template>
+</tui-doc-page>
+
+<tour-step-template></tour-step-template>

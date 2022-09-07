@@ -28,4 +28,8 @@ export const pages: TuiDocPages = [{
     section: 'Tour UI Libraries',
     title: 'Console',
     route: 'console'
+}, {
+    section: 'Tour UI Libraries',
+    title: 'Ionic',
+    route: 'ionic'
 }];

@@ -7,6 +7,8 @@ import {TuiDocMainModule} from '@taiga-ui/addon-doc';
 import {APP_PROVIDERS} from './app.providers';
 import {TuiLinkModule, TuiModeModule} from '@taiga-ui/core';
 import {TuiThemeAndroidModule, TuiThemeIosModule} from '@taiga-ui/addon-mobile';
+import {IonicModule} from '@ionic/angular';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
     bootstrap: [AppComponent],
@@ -19,7 +21,9 @@ import {TuiThemeAndroidModule, TuiThemeIosModule} from '@taiga-ui/addon-mobile';
         TuiLinkModule,
         TuiModeModule,
         TuiThemeAndroidModule,
-        TuiThemeIosModule
+        TuiThemeIosModule,
+        IonicModule.forRoot(),
+        RouterModule
     ],
     providers: APP_PROVIDERS
 })

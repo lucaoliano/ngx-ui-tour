@@ -6,6 +6,7 @@ import {TourAnchorNgxBootstrapDirective, TourAnchorNgxBootstrapPopoverDirective}
 import {TourAnchorConsoleDirective} from 'ngx-ui-tour-console';
 import {TourAnchorTuiDropdownDirective} from 'ngx-ui-tour-tui-dropdown';
 import {TourAnchorTuiHintDirective} from 'ngx-ui-tour-tui-hint';
+import {TourAnchorIonicDirective} from 'ngx-ui-tour-ionic';
 
 export const TOUR_ANCHOR_DIRECTIVE = new InjectionToken<TourAnchorDirective>('TourAnchorDirective');
 export const TOUR_ANCHOR_DIRECTIVE_TYPE = new InjectionToken<Type<TourAnchorDirective>>('TourAnchorDirectiveType');
@@ -30,7 +31,8 @@ export const TOUR_ANCHOR_DIRECTIVE_TYPE = new InjectionToken<Type<TourAnchorDire
 
                 return inject(type);
             }
-        }
+        },
+        TourAnchorIonicDirective
     ]
 })
 export class ProxyTourAnchorDirective implements OnInit, OnDestroy {

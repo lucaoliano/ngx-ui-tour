@@ -1,0 +1,28 @@
+{
+  "name": "ngx-ui-tour-ionic",
+  "version": "1.0.0",
+  "description": "UI tour library for Angular 12+",
+  "keywords": [
+    "angular",
+    "ngx",
+    "ionic",
+    "tour",
+    "product-tour",
+    "ui-tour",
+    "onboarding",
+    "onboarding-tour"
+  ],
+  "repository": "https://github.com/hakimio/ngx-ui-tour.git",
+  "author": "Luca Oliano <lucaoliano@hotmail.it>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "@ionic/angular": "^6.2.0",
+    "typescript": ">=3.8.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "ngx-ui-tour-core": "9.0.0"
+  }
+}

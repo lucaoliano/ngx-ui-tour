@@ -38,6 +38,12 @@ export const ROUTES = [{
         title: 'Taiga UI Hint'
     }
 }, {
+    loadChildren: () => import('./ionic/ionic.module').then(m => m.IonicModule),
+    path: 'ionic',
+    data: {
+        title: 'Ionic'
+    }
+}, {
     redirectTo: 'md-menu',
     path: '**'
 }];
